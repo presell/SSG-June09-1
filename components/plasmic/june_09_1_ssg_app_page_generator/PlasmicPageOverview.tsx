@@ -404,6 +404,7 @@ function PlasmicPageOverview__RenderFunc(props: {
                 data-plasmic-name={"squeezeVariant2"}
                 data-plasmic-override={overrides.squeezeVariant2}
                 className={classNames("__wab_instance", sty.squeezeVariant2)}
+                editable={"false"}
                 pageId={(() => {
                   try {
                     return $ctx.params.slug;

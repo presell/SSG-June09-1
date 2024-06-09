@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+
 function PlasmicLogo() {
   return (
     <svg
@@ -62,7 +63,6 @@ function PlasmicLogo() {
   );
 }
 
-
 function Index() {
   return (
     <div style={{ width: "100%", padding: "100px", alignContent: "center" }}>
@@ -82,10 +82,14 @@ function Index() {
           </a>
         </h4>
         
-          <h3>Your pages:</h3>
-          <ul>
-            <li><Link href="/page/[slug]">PageOverview - /page/[slug]</Link></li>
-          </ul>
+        <h3>Your pages:</h3>
+        <ul>
+          <li>
+            <Link href="/page/[slug]" passHref>
+              <a>PageOverview - /page/[slug]</a>
+            </Link>
+          </li>
+        </ul>
     
         <p><i>Note: Remember to remove this file if you introduce a Page component at the &#39;/&#39; path.</i></p>
       </header>

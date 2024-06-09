@@ -124,6 +124,11 @@
   font-size: 15px;
   min-width: 470px;
 }
+.embedHtml__zvNnc:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .text22 {
   position: relative;
   font-family: "Inter", sans-serif;
@@ -1680,7 +1685,7 @@
     padding-right: 40px;
   }
 }
-.embedHtml:global(.__wab_instance) {
+.embedHtml__lb8LM:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
   position: relative;

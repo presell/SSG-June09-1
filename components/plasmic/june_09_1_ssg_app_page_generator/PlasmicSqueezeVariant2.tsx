@@ -65,6 +65,7 @@ import {
   usePlasmicInvalidate
 } from "@plasmicapp/react-web/lib/data-sources";
 
+import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 import TextInput from "../../TextInput"; // plasmic-import: 3r4TxCxZZuIK5/component
 import Button from "../../Button"; // plasmic-import: VGxgH9M5y5qbv/component
 import Editable from "../../Editable"; // plasmic-import: _4GX0kVcpccZ/component
@@ -75,7 +76,6 @@ import { FormItemWrapper } from "@plasmicpkgs/antd5/skinny/FormItem";
 import { AntdInput } from "@plasmicpkgs/antd5/skinny/registerInput";
 import { inputHelpers as AntdInput_Helpers } from "@plasmicpkgs/antd5/skinny/registerInput";
 import { AntdButton } from "@plasmicpkgs/antd5/skinny/registerButton";
-import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
 import { useScreenVariants as useScreenVariants_4QySl5Jbwgie } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 4qySl5jbwgie/globalVariant
@@ -186,7 +186,6 @@ export type PlasmicSqueezeVariant2__OverridesType = {
   textInput3?: Flex__<typeof TextInput>;
   textInput4?: Flex__<typeof TextInput>;
   squeezeC1Disclaimer2?: Flex__<"div">;
-  embedHtml?: Flex__<typeof Embed>;
 };
 
 export interface DefaultSqueezeVariant2Props {
@@ -583,6 +582,13 @@ function PlasmicSqueezeVariant2__RenderFunc(props: {
                 })()}
               </React.Fragment>
             </div>
+            <Embed
+              className={classNames("__wab_instance", sty.embedHtml__zvNnc)}
+              code={
+                '<svg width="470px" height="23px" version="1.1" style="border-radius: 20px">\n    <defs>\n        <linearGradient id="graywave1" x1="0%" y1="0%" x2="100%" y2="100%">\n          <stop style="stop-color:#eee;stop-opacity:0.5" offset="0"/>\n          <stop style="stop-color:#ccc;stop-opacity:0.5" offset="0.5"/>\n          <stop style="stop-color:#eee;stop-opacity:0.5" offset="1.0"/>\n        </linearGradient>\n        <linearGradient id="graywave2" x1="0%" y1="0%" x2="100%" y2="100%">\n          <stop style="stop-color:#ccc;stop-opacity:0.5" offset="0"/>\n          <stop style="stop-color:#eee;stop-opacity:0.5" offset="0.5"/>\n          <stop style="stop-color:#ccc;stop-opacity:0.5" offset="1.0"/>\n        </linearGradient>\n    </defs>\n    <rect style="fill:url(#graywave1);fill-opacity:1;fill-rule:evenodd;" id="loaderrect1" width="100%" height="100%" x="-200%" y="0"/>\n    <rect style="fill:url(#graywave2);fill-opacity:1;fill-rule:evenodd;" id="loaderrect2" width="100%" height="100%" x="-100%" y="0"/>\n    <rect style="fill:url(#graywave1);fill-opacity:1;fill-rule:evenodd;" id="loaderrect3" width="100%" height="100%" x="0" y="0"/>\n    <animate xlink:href="#loaderrect1" attributename="x" from="-200%" to="0%" dur="0.8s" begin="0s" fill="freeze" repeatcount="indefinite"/>\n    <animate xlink:href="#loaderrect2" attributename="x" from="-100%" to="100%" dur="0.8s" begin="0s" fill="freeze"repeatcount="indefinite"/>\n    <animate xlink:href="#loaderrect3" attributename="x" from="0%" to="200%" dur="0.8s" begin="0s" fill="freeze"repeatcount="indefinite"/>\n</svg>'
+              }
+            />
+
             <div
               data-plasmic-name={"text22"}
               data-plasmic-override={overrides.text22}
@@ -2271,11 +2277,7 @@ function PlasmicSqueezeVariant2__RenderFunc(props: {
           </div>
         </div>
       </div>
-      <Embed
-        data-plasmic-name={"embedHtml"}
-        data-plasmic-override={overrides.embedHtml}
-        className={classNames("__wab_instance", sty.embedHtml)}
-      />
+      <Embed className={classNames("__wab_instance", sty.embedHtml__lb8LM)} />
     </div>
   ) as React.ReactElement | null;
 }
@@ -2357,8 +2359,7 @@ const PlasmicDescendants = {
     "squeezeC1Cta2",
     "textInput3",
     "textInput4",
-    "squeezeC1Disclaimer2",
-    "embedHtml"
+    "squeezeC1Disclaimer2"
   ],
   desktopNotEditable: [
     "desktopNotEditable",
@@ -2525,8 +2526,7 @@ const PlasmicDescendants = {
   squeezeC1Cta2: ["squeezeC1Cta2"],
   textInput3: ["textInput3"],
   textInput4: ["textInput4"],
-  squeezeC1Disclaimer2: ["squeezeC1Disclaimer2"],
-  embedHtml: ["embedHtml"]
+  squeezeC1Disclaimer2: ["squeezeC1Disclaimer2"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -2608,7 +2608,6 @@ type NodeDefaultElementType = {
   textInput3: typeof TextInput;
   textInput4: typeof TextInput;
   squeezeC1Disclaimer2: "div";
-  embedHtml: typeof Embed;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -2746,7 +2745,6 @@ export const PlasmicSqueezeVariant2 = Object.assign(
     textInput3: makeNodeComponent("textInput3"),
     textInput4: makeNodeComponent("textInput4"),
     squeezeC1Disclaimer2: makeNodeComponent("squeezeC1Disclaimer2"),
-    embedHtml: makeNodeComponent("embedHtml"),
 
     // Metadata about props expected for PlasmicSqueezeVariant2
     internalVariantProps: PlasmicSqueezeVariant2__VariantProps,
